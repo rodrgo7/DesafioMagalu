@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'magaludb'
+    image: 'mysql:latest'
+    environment: 
+      - 'MYSQL_DATABASE=localhost'
+      - 'MYSQL_PASSWORD=rovidaloka'
+      - 'MYSQL_ROOT_PASSWORD=rovidaloka'
+      - 'MYSQL_USER=root'
+    ports:
+      - '3306:3306'
